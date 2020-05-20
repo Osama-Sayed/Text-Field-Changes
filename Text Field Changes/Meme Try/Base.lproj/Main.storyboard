@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Meme_Try" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your zip code here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27M-CQ-KzD">
+                                <rect key="frame" x="41" y="63" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ef-PS-817">
+                                <rect key="frame" x="41" y="105" width="291" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="br7-It-A4l">
+                                <rect key="frame" x="41" y="147" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tBZ-Bi-RM1">
+                                <rect key="frame" x="283" y="147" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleTheTextEditor:" destination="BYZ-38-t0r" eventType="valueChanged" id="bxx-Ku-XnY"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ef-PS-817" firstAttribute="trailing" secondItem="27M-CQ-KzD" secondAttribute="trailing" id="5zI-HM-TSO"/>
+                            <constraint firstItem="27M-CQ-KzD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="Brk-PF-1xM"/>
+                            <constraint firstItem="br7-It-A4l" firstAttribute="top" secondItem="4ef-PS-817" secondAttribute="bottom" constant="12" id="Bw2-zV-AA2"/>
+                            <constraint firstItem="tBZ-Bi-RM1" firstAttribute="top" secondItem="4ef-PS-817" secondAttribute="bottom" constant="12" id="GKN-2p-sdU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tBZ-Bi-RM1" secondAttribute="bottom" constant="489" id="H7g-AA-Jyp"/>
+                            <constraint firstItem="27M-CQ-KzD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="Ih0-E9-M9Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="br7-It-A4l" secondAttribute="bottom" constant="490" id="NaI-Oj-Vqz"/>
+                            <constraint firstItem="br7-It-A4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="WLM-67-91h"/>
+                            <constraint firstItem="br7-It-A4l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="Xx5-y8-DFr"/>
+                            <constraint firstItem="4ef-PS-817" firstAttribute="top" secondItem="27M-CQ-KzD" secondAttribute="bottom" constant="12" id="Yg0-wj-iXl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tBZ-Bi-RM1" secondAttribute="trailing" constant="43" id="cyv-hf-LgB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27M-CQ-KzD" secondAttribute="trailing" constant="43" id="hOx-N6-RGr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="br7-It-A4l" secondAttribute="bottom" constant="490" id="nXA-qv-jZ1"/>
+                            <constraint firstItem="4ef-PS-817" firstAttribute="leading" secondItem="27M-CQ-KzD" secondAttribute="leading" id="qkX-c7-057"/>
+                            <constraint firstItem="br7-It-A4l" firstAttribute="top" secondItem="4ef-PS-817" secondAttribute="bottom" constant="12" id="t4T-JR-3xs"/>
+                            <constraint firstItem="tBZ-Bi-RM1" firstAttribute="leading" secondItem="br7-It-A4l" secondAttribute="trailing" constant="17" id="xZ1-3m-UPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="editingSwitch" destination="tBZ-Bi-RM1" id="WDy-ee-0j2"/>
+                        <outlet property="textField1" destination="27M-CQ-KzD" id="8ih-N8-5nY"/>
+                        <outlet property="textField2" destination="4ef-PS-817" id="FN5-2q-ZJu"/>
+                        <outlet property="textField3" destination="br7-It-A4l" id="aYd-o3-atV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+</document>
